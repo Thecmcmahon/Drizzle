@@ -24,12 +24,12 @@
 		grid-column: 1/-1;
 		grid-row: 3;
 	}
-	button{
-		grid-column: 6/8;
-		grid-row: 12;
-		position: relative;
-		z-index: 10;
-	}
+	// button{
+	// 	grid-column: 6/8;
+	// 	grid-row: 12;
+	// 	position: relative;
+	// 	z-index: 10;
+	// }
 	.curTemp{
 		grid-column: 5/9;
 		grid-row: 2;
@@ -88,7 +88,11 @@
 	transform: translate(-50%, -50%);
 	
 }
-
+button{
+	position: relative;
+	bottom: 20px;
+	z-index: 10;
+}
 .grid{
 	display: grid !important;
 }
