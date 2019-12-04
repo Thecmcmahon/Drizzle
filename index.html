@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="back-row-toggle splat-toggle" onload="getLocation()">
+  <section class="main">
+    <h1 class="title">Drizzle</h1>
+    <h2 class="highTemp">High Temperature</h2>
+    <h2 class="highTempOne"></h2>
+    <h2 class="today"></h2>
+    <h2 class="curTemp">Current Temperature</h2>
+    <h2 class="realFeel">Real Feel</h2>
+    <h2 class="prec">Precipitation</h2>
+    <h2 class="lowTemp">Low Temperature</h2>
+    <h2 class="sunR">Sunrise</h2>
+    <h2 class="sunRtime"></h2>
+    <h2 class="sunS">Sunset</h2>
+    <!-- <h2 class="chanSnow">Chance of Snow</h2> -->
+    <h2 class="humi">Humidity</h2>
+    <h2 class="sum"></h2>
+    <h2 class="sevenday">7 Day Forecast</h2>
+    <h2 class="dayOne"></h2>
+    <h2 class="dayTwo"></h2>
+    <h2 class="dayThree"></h2>
+    <h2 class="dayFour"></h2>
+    <h2 class="dayFive"></h2>
+    <h2 class="daySix"></h2>
+    <h2 class="daySeven"></h2>
+
+
+
+
+
+    <button onclick="getLocation()">Update</button>
+  </section>
+  
+  <section class="rainBackground">
+    <div class="rain front-row"></div>
+    <div class="rain back-row"></div>
+  </section>
+  
+  <section class="snowBackground">
+    <canvas id="snow" class="snow"></canvas>
+    
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+   <script src="js/location.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="js/snow.js"></script> -->
+  
+  <script type="text/javascript">
+    var makeItRain = function() {
+  //clear out everything
+  $('.rain').empty();
+
+  var increment = 0;
+  var drops = "";
+  var backDrops = "";
+
+  while (increment < 100) {
+    //couple random numbers to use for various randomizations
+    //random number between 98 and 1
+    var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
+    //random number between 5 and 2
+    var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
+    //increment
+    increment += randoFiver;
+    //add in a new raindrop with various randomizations to certain CSS properties
+    drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+    backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+  }
+
+  $('.rain.front-row').append(drops);
+  $('.rain.back-row').append(backDrops);
+}
+
+$('.splat-toggle.toggle').on('click', function() {
+  $('body').toggleClass('splat-toggle');
+  $('.splat-toggle.toggle').toggleClass('active');
+  makeItRain();
+});
+
+$('.back-row-toggle.toggle').on('click', function() {
+  $('body').toggleClass('back-row-toggle');
+  $('.back-row-toggle.toggle').toggleClass('active');
+  makeItRain();
+});
+
+$('.single-toggle.toggle').on('click', function() {
+  $('body').toggleClass('single-toggle');
+  $('.single-toggle.toggle').toggleClass('active');
+  makeItRain();
+});
+
+makeItRain();
+  </script>
+
+</body>
+
+</html>
