@@ -23,80 +23,43 @@
 		grid-template-rows: repeat(12, 1fr);
 		height: 100vh;
 		.title{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 1;
-		}
-		.highTemp{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 12;
-		}
-		.today{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 3;
-		}
-		button{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 11;
-		}
-		.curTemp{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 2;
-		}
-		.realFeel{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 5;
-		}
-		.prec{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 12;
-		}
-		.lowTemp{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 12;
-		}
-		.sunR{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 12;
-		}
-		.sunS{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 12;
-		}
-		.humi{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 12;
-		}
-		.sum{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 4;
-		}
-		.sevenday{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 12;
-		}
-		.highTempOne{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 12;
-		}
-		.sunRtime{
-			grid-column: 1/-1;
-			justify-self: center;
-			grid-row: 12;
-		}
+		grid-column: 1/-1;
+		justify-self: center;
+		grid-row: 1;
+	}
+	
+	:nth-child(2){
+		grid-column: 1/-1;
+		grid-row: 2/4;
+	}
+	:nth-child(3){
+		grid-column: 1/-1;
+		grid-row: 5;
+	}
+	:nth-child(4){
+		grid-column: 1/-1;
+		grid-row: 6;
+	}
+	:nth-child(5){
+		grid-column: 1/-1;
+		grid-row: 7;
+	}
+	:nth-child(6){
+		grid-column: 1/-1;
+		grid-row: 8;
+	}
+	:nth-child(7){
+		grid-column: 1/-1;
+		grid-row: 9;
+	}
+	:nth-child(8){
+		grid-column: 1/-1;
+		grid-row: 10;
+	}
+	:nth-child(9){
+		grid-column: 1/-1;
+		grid-row: 11;
+	}
 	}
 
 }

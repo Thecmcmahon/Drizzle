@@ -100,8 +100,12 @@ function displayData(forecast){
 	// If I want to round this number up, I would modify the code like this
 
 	$('.today').html(Math.round(forecast.currently.temperature) + "°F");
-	$('.highTempOne').html(Math.round(forecast.daily.data[0].temperatureHigh));
-	$('.sunRtime').html(forecast.daily.data[0].sunriseTime);
+	$('.highTempOne').html(Math.round(forecast.daily.data[0].temperatureHigh) + "°F");
+	$('.realFeel').html(Math.round(forecast.currently.apparentTemperature) + "°F");
+	$('.lowTemp').html(Math.round(forecast.daily.data[0].temperatureLow) + "°F");
+	$('.icon').append('<img src="'+displayIcon(forecast.daily.data[0].icon)+'">');
+
+	// $('.sunRtime').html(forecast.daily.data[0].sunriseTime);
 
 	// If I want to display the same information for tomorrow, change the 0 to 1
 
@@ -193,5 +197,64 @@ function timeConverter(UNIX_timestamp){
   return time;
   console.log(time);
 }
+
+
+
+function displayIcon(n){
+	switch(n) {
+		case "clear-day":
+    		return "img/icons/Sun.svg";
+    		break;
+    	case "clear-night":
+    		return "img/icons/Moon-Full.svg";
+    		break;
+    	case "rain":
+    		return "img/icons/Cloud-Rain.svg";
+    		break;
+    	case "snow":
+    		return "img/icons/Snowflake.svg";
+    		break;
+    	case "sleet":
+    		return "img/icons/Cloud-Hail.svg";
+    		break;
+    	case "wind":
+    		return "img/icons/Wind.svg";
+    		break;
+    	case "fog":
+    		return "img/icons/Cloud-Fog.svg";
+    		break;
+    	case "cloudy":
+    		return "img/icons/Cloud.svg";
+    		break;
+    	case "partly-cloudy-day":
+    		return "img/icons/Cloud-Sun.svg";
+    		break;
+    	case "partly-cloudy-night":
+    		return "img/icons/Cloud-Moon.svg";
+    		break;
+    	case "hail":
+    		return "img/icons/Cloud-Hail.svg";
+    		break;
+    	case "thunderstorm":
+    		return "img/icons/Cloud-Lightening.svg";
+    		break;
+    	case "tornado":
+    		return "img/icons/Tornado.svg";
+    		break;
+  		default:
+    		// code block
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 }
