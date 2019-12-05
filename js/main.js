@@ -99,7 +99,7 @@ function displayData(forecast){
 	// (referenced by the number 0) is written as HTML inside the <div class="today"> element
 	// If I want to round this number up, I would modify the code like this
 
-	$('.today').html(Math.round(forecast.currently.temperature));
+	$('.today').html(Math.round(forecast.currently.temperature) + "°F");
 	$('.highTempOne').html(Math.round(forecast.daily.data[0].temperatureHigh));
 	$('.sunRtime').html(forecast.daily.data[0].sunriseTime);
 

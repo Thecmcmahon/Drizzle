@@ -1,4 +1,4 @@
-.title, .opening{
+.title{
 	font-family: $font-1;
 	color: white;
 	font-size: 3rem;
@@ -11,4 +11,23 @@ h2{
 	font-size: 2rem;
 	text-align: center;
 	font-variation-settings: 'wght' 1000;
+	margin: 3vh 0;
+}
+
+.opening{
+	font-family: $font-1;
+	color: white;
+	font-size: 15vw;
+	text-align: center;
+	font-variation-settings: 'wght' 100;
+	margin: 0;
+}
+
+.button{
+	font-family: $font-1;
+	color: white;
+	background-color: transparent;
+	padding: 20px 40px;
+	border-radius: 25px
+
 }
