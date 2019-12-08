@@ -32,11 +32,11 @@
 			grid-row: 1;
 		}
 	
-		:nth-child(2){
+		.section2{
 			grid-column: 1/-1;
 			grid-row: 2/4;
 		}
-		:nth-child(3){
+		.section3{
 			grid-column: 1/-1;
 			grid-row: 5;
 		}
@@ -48,22 +48,28 @@
 			grid-column: 1/-1;
 			grid-row: 7;
 		}
-		:nth-child(6){
+		.sum{
 			grid-column: 1/-1;
-			grid-row: 8;
+			grid-row: 7;
+			self-align: center;
+			justify-self: center;
 		}
-		:nth-child(7){
-			grid-column: 1/-1;
-			grid-row: 9;
-		}
-		:nth-child(8){
-			grid-column: 1/-1;
-			grid-row: 10;
-		}
-		:nth-child(9){
-			grid-column: 1/-1;
-			grid-row: 11;
-		}
+		// :nth-child(6){
+		// 	grid-column: 1/-1;
+		// 	grid-row: 8;
+		// }
+		// :nth-child(7){
+		// 	grid-column: 1/-1;
+		// 	grid-row: 9;
+		// }
+		// :nth-child(8){
+		// 	grid-column: 1/-1;
+		// 	grid-row: 10;
+		// }
+		// :nth-child(9){
+		// 	grid-column: 1/-1;
+		// 	grid-row: 11;
+		// }
 	}
 
 }

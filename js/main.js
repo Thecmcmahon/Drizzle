@@ -46,6 +46,7 @@ $.getJSON('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/
 	$('.main').addClass('grid');
 	$('.rainBackground').hide();
 	$('.button').hide();
+	$('body').removeClass('background');
 	timeConverter();
 
 
