@@ -77,3 +77,46 @@
 	border-radius: 25px
 
 }
+
+
+
+
+
+.hourly {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .hour1, .hour2, .hour3, .hour4, .hour5, .hour6, .hour7, .hour8, .hour9, .hour10, .hour11, .hour12 {
+    display: inline-block;
+    margin: 0 4vw;
+  }
+  h2{
+  	font-family: $font-1;
+	color: #000;
+	font-size: 1.5rem;
+	text-align: center;
+	font-variation-settings: 'wght' 100;
+	margin-top: 3vh;
+  }
+  h3{
+  	font-family: $font-1;
+	color: #000;
+	font-size: 1.5rem;
+	text-align: center;
+	font-variation-settings: 'wght' 1000;
+	margin-top: 3vh;
+  }
+  img{
+  	margin-top: -5vh;
+  }
+}
+
+
+
+
+
+
+
+
+
