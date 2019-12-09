@@ -48,6 +48,7 @@ $.getJSON('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/
 	$('.rainBackground').hide();
 	$('.button').hide();
 	$('body').removeClass('background');
+	$('.wait').removeClass('waiting');
 	timeConverter();
 
 
@@ -155,6 +156,43 @@ function displayData(forecast){
 	$('.hour12 h2').html(timeConverter(forecast.hourly.data[12].time)+'0');
 	$('.hour12 h3').html(Math.round(forecast.hourly.data[12].temperature) + "°F");
 	$('.hour12 div').html('<img src="'+displayIcon(forecast.hourly.data[12].icon)+'">');
+
+
+
+	$('.day1 h2').html(displayDay(0));
+	$('.day1 h3').html(Math.round(forecast.daily.data[0].temperatureLow) + "°F");
+	$('.day1 div').html('<img src="'+displayIcon(forecast.daily.data[0].icon)+'">');
+	$('.day1 h4').html(Math.round(forecast.daily.data[0].temperatureHigh) + "°F");
+
+	$('.day2 h2').html(displayDay(1));
+	$('.day2 h3').html(Math.round(forecast.daily.data[1].temperatureLow) + "°F");
+	$('.day2 div').html('<img src="'+displayIcon(forecast.daily.data[1].icon)+'">');
+	$('.day2 h4').html(Math.round(forecast.daily.data[1].temperatureHigh) + "°F");
+
+	$('.day3 h2').html(displayDay(2));
+	$('.day3 h3').html(Math.round(forecast.daily.data[2].temperatureLow) + "°F");
+	$('.day3 div').html('<img src="'+displayIcon(forecast.daily.data[2].icon)+'">');
+	$('.day3 h4').html(Math.round(forecast.daily.data[2].temperatureHigh) + "°F");
+
+	$('.day4 h2').html(displayDay(3));
+	$('.day4 h3').html(Math.round(forecast.daily.data[3].temperatureLow) + "°F");
+	$('.day4 div').html('<img src="'+displayIcon(forecast.daily.data[3].icon)+'">');
+	$('.day4 h4').html(Math.round(forecast.daily.data[3].temperatureHigh) + "°F");
+
+	$('.day5 h2').html(displayDay(4));
+	$('.day5 h3').html(Math.round(forecast.daily.data[4].temperatureLow) + "°F");
+	$('.day5 div').html('<img src="'+displayIcon(forecast.daily.data[4].icon)+'">');
+	$('.day5 h4').html(Math.round(forecast.daily.data[4].temperatureHigh) + "°F");
+
+	$('.day6 h2').html(displayDay(5));
+	$('.day6 h3').html(Math.round(forecast.daily.data[5].temperatureLow) + "°F");
+	$('.day6 div').html('<img src="'+displayIcon(forecast.daily.data[5].icon)+'">');
+	$('.day6 h4').html(Math.round(forecast.daily.data[5].temperatureHigh) + "°F");
+
+	$('.day7 h2').html(displayDay(6));
+	$('.day7 h3').html(Math.round(forecast.daily.data[6].temperatureLow) + "°F");
+	$('.day7 div').html('<img src="'+displayIcon(forecast.daily.data[6].icon)+'">');
+	$('.day7 h4').html(Math.round(forecast.daily.data[6].temperatureHigh) + "°F");
 
 
 

@@ -1,3 +1,6 @@
+img{
+	width: 100px;
+}
 .title{
 	font-family: $font-1;
 	color: white;
@@ -132,6 +135,41 @@
 
 .multiday{
 	display: none;
+	h1{
+		margin: 0;
+		font-family: $font-1;
+		color: #000;
+		font-size: 2rem;
+		text-align: center;
+		font-variation-settings: 'wght' 1000;
+	}
+	h2{
+		margin: 0;
+		font-family: $font-1;
+		color: #000;
+		font-size: 1.5rem;
+		text-align: center;
+		font-variation-settings: 'wght' 500;
+	}
+	h3{
+		margin: 0;
+		font-family: $font-1;
+		color: #000;
+		font-size: 1.2rem;
+		text-align: center;
+		font-variation-settings: 'wght' 100;
+	}
+	h4{
+		margin: 0;
+		font-family: $font-1;
+		color: #000;
+		font-size: 1.2rem;
+		text-align: center;
+		font-variation-settings: 'wght' 1000;
+	}
+	img{
+		margin-top: -4vh;
+	}
 }
 
 .show{
