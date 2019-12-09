@@ -116,44 +116,44 @@ function displayData(forecast){
 	$('.hour2 div').html('<img src="'+displayIcon(forecast.hourly.data[2].icon)+'">');
 
 	$('.hour3 h2').html(timeConverter(forecast.hourly.data[3].time)+'0');
-	$('.hour3 h3').html(Math.round(forecast.hourly.data[1].temperature) + "°F");
-	$('.hour3 div').html('<img src="'+displayIcon(forecast.hourly.data[1].icon)+'">');
+	$('.hour3 h3').html(Math.round(forecast.hourly.data[3].temperature) + "°F");
+	$('.hour3 div').html('<img src="'+displayIcon(forecast.hourly.data[3].icon)+'">');
 
-	$('.hour4 h2').html(timeConverter(forecast.hourly.data[1].time)+'0');
-	$('.hour4 h3').html(Math.round(forecast.hourly.data[3].temperature) + "°F");
-	$('.hour4 div').html('<img src="'+displayIcon(forecast.hourly.data[3].icon)+'">');
+	$('.hour4 h2').html(timeConverter(forecast.hourly.data[4].time)+'0');
+	$('.hour4 h3').html(Math.round(forecast.hourly.data[4].temperature) + "°F");
+	$('.hour4 div').html('<img src="'+displayIcon(forecast.hourly.data[4].icon)+'">');
 
-	$('.hour5 h2').html(timeConverter(forecast.hourly.data[4].time)+'0');
-	$('.hour5 h3').html(Math.round(forecast.hourly.data[4].temperature) + "°F");
-	$('.hour5 div').html('<img src="'+displayIcon(forecast.hourly.data[4].icon)+'">');
+	$('.hour5 h2').html(timeConverter(forecast.hourly.data[5].time)+'0');
+	$('.hour5 h3').html(Math.round(forecast.hourly.data[5].temperature) + "°F");
+	$('.hour5 div').html('<img src="'+displayIcon(forecast.hourly.data[5].icon)+'">');
 
-	$('.hour6 h2').html(timeConverter(forecast.hourly.data[5].time)+'0');
-	$('.hour6 h3').html(Math.round(forecast.hourly.data[5].temperature) + "°F");
-	$('.hour6 div').html('<img src="'+displayIcon(forecast.hourly.data[5].icon)+'">');
+	$('.hour6 h2').html(timeConverter(forecast.hourly.data[6].time)+'0');
+	$('.hour6 h3').html(Math.round(forecast.hourly.data[6].temperature) + "°F");
+	$('.hour6 div').html('<img src="'+displayIcon(forecast.hourly.data[6].icon)+'">');
 
-	$('.hour7 h2').html(timeConverter(forecast.hourly.data[6].time)+'0');
-	$('.hour7 h3').html(Math.round(forecast.hourly.data[6].temperature) + "°F");
-	$('.hour7 div').html('<img src="'+displayIcon(forecast.hourly.data[6].icon)+'">');
+	$('.hour7 h2').html(timeConverter(forecast.hourly.data[7].time)+'0');
+	$('.hour7 h3').html(Math.round(forecast.hourly.data[7].temperature) + "°F");
+	$('.hour7 div').html('<img src="'+displayIcon(forecast.hourly.data[7].icon)+'">');
 
-	$('.hour8 h2').html(timeConverter(forecast.hourly.data[7].time)+'0');
-	$('.hour8 h3').html(Math.round(forecast.hourly.data[7].temperature) + "°F");
-	$('.hour8 div').html('<img src="'+displayIcon(forecast.hourly.data[7].icon)+'">');
+	$('.hour8 h2').html(timeConverter(forecast.hourly.data[8].time)+'0');
+	$('.hour8 h3').html(Math.round(forecast.hourly.data[8].temperature) + "°F");
+	$('.hour8 div').html('<img src="'+displayIcon(forecast.hourly.data[8].icon)+'">');
 
-	$('.hour9 h2').html(timeConverter(forecast.hourly.data[8].time)+'0');
-	$('.hour9 h3').html(Math.round(forecast.hourly.data[8].temperature) + "°F");
-	$('.hour9 div').html('<img src="'+displayIcon(forecast.hourly.data[8].icon)+'">');
+	$('.hour9 h2').html(timeConverter(forecast.hourly.data[9].time)+'0');
+	$('.hour9 h3').html(Math.round(forecast.hourly.data[9].temperature) + "°F");
+	$('.hour9 div').html('<img src="'+displayIcon(forecast.hourly.data[9].icon)+'">');
 
-	$('.hour10 h2').html(timeConverter(forecast.hourly.data[9].time)+'0');
-	$('.hour10 h3').html(Math.round(forecast.hourly.data[9].temperature) + "°F");
-	$('.hour10 div').html('<img src="'+displayIcon(forecast.hourly.data[9].icon)+'">');
+	$('.hour10 h2').html(timeConverter(forecast.hourly.data[10].time)+'0');
+	$('.hour10 h3').html(Math.round(forecast.hourly.data[10].temperature) + "°F");
+	$('.hour10 div').html('<img src="'+displayIcon(forecast.hourly.data[10].icon)+'">');
 
-	$('.hour11 h2').html(timeConverter(forecast.hourly.data[10].time)+'0');
-	$('.hour11 h3').html(Math.round(forecast.hourly.data[10].temperature) + "°F");
-	$('.hour11 div').html('<img src="'+displayIcon(forecast.hourly.data[10].icon)+'">');
+	$('.hour11 h2').html(timeConverter(forecast.hourly.data[11].time)+'0');
+	$('.hour11 h3').html(Math.round(forecast.hourly.data[11].temperature) + "°F");
+	$('.hour11 div').html('<img src="'+displayIcon(forecast.hourly.data[11].icon)+'">');
 
-	$('.hour12 h2').html(timeConverter(forecast.hourly.data[11].time)+'0');
-	$('.hour12 h3').html(Math.round(forecast.hourly.data[11].temperature) + "°F");
-	$('.hour12 div').html('<img src="'+displayIcon(forecast.hourly.data[11].icon)+'">');
+	$('.hour12 h2').html(timeConverter(forecast.hourly.data[12].time)+'0');
+	$('.hour12 h3').html(Math.round(forecast.hourly.data[12].temperature) + "°F");
+	$('.hour12 div').html('<img src="'+displayIcon(forecast.hourly.data[12].icon)+'">');
 
 
 
@@ -253,8 +253,69 @@ function timeConverter(UNIX_timestamp){
   var sec = a.getSeconds();
   //var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
   var time = hour + ':' + min ;
-  return time;
-  console.log(time);
+  
+  if (time == '13:0') {
+  	time = '1:0';
+  	return time;
+  	console.log(time);
+  }else if (time == '14:0') {
+  	time = '2:0';
+  	return time;
+  	console.log(time);
+
+  }else if (time == '15:0') {
+  	time = '3:0';
+  	return time;
+  	console.log(time);
+
+  }else if (time == '16:0') {
+  	time = '4:0';
+  	return time;
+  	console.log(time);
+
+  }else if (time == '17:0') {
+  	time = '5:0';
+  	return time;
+  	console.log(time);
+
+  }else if (time == '18:0') {
+  	time = '6:0';
+  	return time;
+  	console.log(time);
+
+  }else if (time == '19:0') {
+  	time = '7:0';
+  	return time;
+  	console.log(time);
+
+  }else if (time == '20:0') {
+  	time = '8:0';
+  	return time;
+  	console.log(time);
+
+  }else if (time == '21:0') {
+  	time = '9:0';
+  	return time;
+  	console.log(time);
+
+  }else if (time == '22:0') {
+  	time = '10:0';
+  	return time;
+  	console.log(time);
+
+  }else if (time == '23:0') {
+  	time = '11:0';
+  	return time;
+  	console.log(time);
+
+  }else if (time == '0:0') {
+  	time = '12:0';
+  	return time;
+  	console.log(time);
+
+  } else {
+  	return time;
+  }
 }
 
 
