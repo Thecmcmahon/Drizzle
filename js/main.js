@@ -105,7 +105,7 @@ function displayData(forecast){
 	$('.highTempOne').html(Math.round(forecast.daily.data[0].temperatureHigh) + "°F");
 	$('.realFeel').html(Math.round(forecast.currently.apparentTemperature) + "°F");
 	$('.lowTemp').html(Math.round(forecast.daily.data[0].temperatureLow) + "°F");
-	$('.icon').append('<img src="'+displayIcon(forecast.daily.data[0].icon)+'">');
+	$('.icon').append('<img src="'+displayIcon(forecast.currently.icon)+'">');
 
 	// $('.sunRtime').html(forecast.daily.data[0].sunriseTime);
 

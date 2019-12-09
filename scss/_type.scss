@@ -27,6 +27,14 @@
 	font-variation-settings: 'wght' 1000;
 	margin: 3vh 0;
 }
+.sum{
+	font-family: $font-1;
+	color: #000;
+	font-size: 1.5rem;
+	text-align: center;
+	font-variation-settings: 'wght' 100;
+	margin: 3vh 0;
+}
 .opening{
 	font-family: $font-1;
 	color: white;
@@ -46,11 +54,19 @@
 }
 .icon{
 	margin: 0;
-	margin-top: 5vh;
+	// margin-top: 5vh;
 	img{
 		width: 100vw;
 		height: auto;
 		// filter:invert(100%);
 		
 	}
+}
+
+.sevenday{
+	font-family: $font-1;
+	color: #000;
+	background-color: transparent;
+	padding: 15px 30px;
+	border-radius: 25px
 }
