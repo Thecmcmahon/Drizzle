@@ -1,5 +1,6 @@
 function getLocation() {
   if (navigator.geolocation) {
+  	$('.wait').addClass('waiting');
     navigator.geolocation.getCurrentPosition(showPosition);
   } else { 
     console.log("Geolocation is not supported by this browser.");
@@ -42,7 +43,7 @@ $.getJSON('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/
 	// Other methods include animating the header away.
 	// This can be done by adding a class name containing CSS animation
 	// code to the header like this (uncomment to use)
-
+	$('.title').addClass('show');
 	$('.main').addClass('grid');
 	$('.rainBackground').hide();
 	$('.button').hide();
@@ -215,13 +216,13 @@ function displayDay(n){
 	var d = new Date();
 	var weekday = new Array();
 
-	weekday[0] = "S";
-	weekday[1] = "M";
-	weekday[2] = "T";
-	weekday[3] = "W";
-	weekday[4] = "T";
-	weekday[5] = "F";
-	weekday[6] = "S";
+	weekday[0] = "Sunday";
+	weekday[1] = "Monday";
+	weekday[2] = "Tuesday";
+	weekday[3] = "Wednesday";
+	weekday[4] = "Thursday";
+	weekday[5] = "Friday";
+	weekday[6] = "Saturday";
 
 	var dispDay = d.getDay() + n;
 
