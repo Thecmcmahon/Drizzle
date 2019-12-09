@@ -55,7 +55,44 @@
 			grid-column: 1/-1;
 			grid-row: 6/8;
 		}
-		
+		.realFeel{
+			grid-column: 1/-1;
+			grid-row: 9;
+		}
+		.lowTemp{
+			grid-column: 1/-1;
+			grid-row: 10;
+		}
+		.highTemp{
+			grid-column: 1/-1;
+			grid-row: 11;
+		}
+		.precipP{
+			grid-column: 1/-1;
+			grid-row: 12;
+		}
+		.humitity{
+			grid-column: 1/-1;
+			grid-row: 13;
+		}
+		.visibility{
+			grid-column: 1/-1;
+			grid-row: 14;
+		}
+		.windspeed{
+			grid-column: 1/-1;
+			grid-row: 15;
+		}
+		.sunrise{
+			grid-column: 1/-1;
+			grid-row: 16;
+		}
+		.sunset{
+			grid-column: 1/-1;
+			grid-row: 17;
+		}
+
+
 	}
 	.multiday{
 		display: none;

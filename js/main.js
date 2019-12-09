@@ -104,10 +104,20 @@ function displayData(forecast){
 	// If I want to round this number up, I would modify the code like this
 
 	$('.today').html(Math.round(forecast.currently.temperature) + "°F");
-	$('.highTempOne').html(Math.round(forecast.daily.data[0].temperatureHigh) + "°F");
-	$('.realFeel').html(Math.round(forecast.currently.apparentTemperature) + "°F");
-	$('.lowTemp').html(Math.round(forecast.daily.data[0].temperatureLow) + "°F");
 	$('.icon').append('<img src="'+displayIcon(forecast.currently.icon)+'">');
+
+	$('.highTemp h2').html(Math.round(forecast.daily.data[0].temperatureHigh) + "°F");
+	$('.realFeel h2').html(Math.round(forecast.currently.apparentTemperature) + "°F");
+	$('.lowTemp h2').html(Math.round(forecast.daily.data[0].temperatureLow) + "°F");
+	$('.precipP h2').html(forecast.currently.precipProbability);
+	$('.humitity h2').html(forecast.currently.humidity);
+	$('.visibility h2').html(forecast.currently.visibility);
+	$('.windspeed h2').html(forecast.currently.windspeed);
+	$('.sunrise h2').html(timeConverter(forecast.daily.data[0].sunriseTime));
+	$('.sunset h2').html(timeConverter(forecast.daily.data[0].sunsetTime));
+
+
+
 	
 	$('.hour1 h2').html(timeConverter(forecast.hourly.data[1].time)+'0');
 	$('.hour1 h3').html(Math.round(forecast.hourly.data[1].temperature) + "°F");
