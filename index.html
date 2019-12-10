@@ -124,7 +124,7 @@
   <section class="multiday">
     <div class="sectionBack"><button onclick="multiDayBack()">Back</button></div>
       <h1>7 Day Forecast</h1>
-      <div class="day1">
+      <div onclick="day01()" class="day1">
         <h2>test</h2>
         <h3>Lowtemp</h3>
         <h4>HighTemp</h4>
@@ -171,7 +171,8 @@
       
   </section>
 
-  <!-- <section class="weekday1">
+  <section class="weekday1">
+    <button class="sectionBack" onclick="day01Back()">Back</button>
     <h1>Monday</h1>
     <h2>Low Temp</h2>
     <h3>High Temp</h3>
@@ -180,7 +181,7 @@
     <h5>Precipitation Probability</h5>
     <h6>Humitity</h6>
     
-  </section> -->
+  </section>
 
 
 
@@ -277,6 +278,21 @@ makeItRain();
       $('.multiday').removeClass('grid');
     }
     
+  </script>
+  <script>
+    function day01(){
+      $('.multiday').removeClass('show');
+      $('.multiday').removeClass('grid');
+      $('.weekday1').addClass('grid');
+
+    }
+  </script>
+  <script>
+    function day01Back(){
+      $('.multiday').addClass('show');
+      $('.multiday').addClass('grid');
+      $('.weekday1').removeClass('grid');
+    }
   </script>
 
 </body>

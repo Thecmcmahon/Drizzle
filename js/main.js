@@ -206,8 +206,13 @@ function displayData(forecast){
 	$('.day7 div').html('<img src="'+displayIcon(forecast.daily.data[6].icon)+'">');
 	$('.day7 h4').html(Math.round(forecast.daily.data[6].temperatureHigh) + "°F");
 
-
-
+	$('.weekday1 h1').html(displayDay(0));
+	$('.weekday1 h2').html(Math.round(forecast.daily.data[0].temperatureLow) + "°F");
+	$('.weekday1 h3').html(Math.round(forecast.daily.data[0].temperatureHigh) + "°F");
+	$('.weekday1 h4').html(forecast.daily.data[0].summary);
+	$('.weekday1 h5').html(displayPrecent(forecast.daily.data[0].precipProbability) + "%");
+	$('.weekday1 h6').html(displayPrecent(forecast.daily.data[0].humidity) + "%");
+	$('.weekday1 div').html('<img src="'+displayIcon(forecast.daily.data[0].icon)+'">');
 
 
 
@@ -242,6 +247,24 @@ function displayData(forecast){
 	// "thunderstorm" and "tornado"
 
 }
+
+
+
+
+function displayPrecent(n){
+	var a = 100;
+	var b = a * n;
+	return b;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* -----------------------------------------------
