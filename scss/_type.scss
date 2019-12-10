@@ -227,7 +227,9 @@
 .sectionBack{
 	background-color: black;
 	padding: 8px 4px;
-	a, button{
+	button{
+		background-color: #000; /* Green */
+  		border: none;
 		font-family: $font-1;
 		color: #fff;
 		font-size: 1.2rem;
