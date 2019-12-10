@@ -35,7 +35,7 @@
       <h2 class="curTemp">Current Temp</h2>
       <h2 class="today"></h2>
     </section>
-    
+    <div class="sectionBack"><button onclick="getLocation()">Update</button></div>
     <h2 class="sum"></h2>
     
     <section class="section3">
@@ -122,6 +122,7 @@
   </section>
    
   <section class="multiday">
+    <div class="sectionBack"><button onclick="multiDayBack()">Back</button></div>
       <h1>7 Day Forecast</h1>
       <div class="day1">
         <h2>test</h2>
@@ -186,7 +187,7 @@
 
 
   <button class="button" onclick="getLocation()">Get Started</button>
-  <div class="wait"><h1>Please wait!</h1></div>
+  <div class="wait"><h1></h1></div>
   
   <section class="rainBackground">
     <h1 class="opening">Drizzle</h1>
@@ -267,6 +268,15 @@ makeItRain();
       $('.main').removeClass('grid');
       $('.multiday').addClass('grid');
     }
+  </script>
+
+  <script>
+    function multiDayBack(){
+      $('.multiday').removeClass('show');
+      $('.main').addClass('grid');
+      $('.multiday').removeClass('grid');
+    }
+    
   </script>
 
 </body>

@@ -94,8 +94,55 @@
     	left: 50%;
     	transform: translate(-50%,0%);
     	width: 100vw;
+    	
 	}
+	::before{
+    		content: "Please Wait";
+    		animation-name: wait;
+  			animation-duration: 1s;
+  			animation-iteration-count: infinite;
+  			animation-timing-function: linear;
+  			animation-fill-mode: forwards;
+    	}
+
 }
+
+.wait2{
+	h1{
+		font-family: $font-1;
+		color: white;
+		font-size: 3rem;
+		text-align: center;
+		font-variation-settings: 'wght' 100;
+		position: fixed;
+    	bottom: 0;
+    	left: 50%;
+    	transform: translate(-50%,0%);
+    	width: 100vw;
+    	
+	}
+	::before{
+    		content: "Loading";
+    		animation-name: wait;
+  			animation-duration: 1s;
+  			animation-iteration-count: infinite;
+  			animation-timing-function: linear;
+  			animation-fill-mode: forwards;
+    	}
+
+}
+
+
+
+@keyframes wait{
+	0%{font-variation-settings: 'wght' 100;}
+	50%{font-variation-settings: 'wght' 1000;}
+	100%{font-variation-settings: 'wght' 100;}
+}
+
+
+
+
 .waiting{
 	display: block;
 }
@@ -177,5 +224,17 @@
 	display: none !important;
 }
 
+.sectionBack{
+	background-color: black;
+	padding: 8px 4px;
+	a, button{
+		font-family: $font-1;
+		color: #fff;
+		font-size: 1.2rem;
+		text-align: center;
+		font-variation-settings: 'wght' 1000;
+		text-decoration: none;
 
+	}
+}
 

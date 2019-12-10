@@ -1,6 +1,7 @@
 function getLocation() {
   if (navigator.geolocation) {
   	$('.wait').addClass('waiting');
+
     navigator.geolocation.getCurrentPosition(showPosition);
   } else { 
     console.log("Geolocation is not supported by this browser.");
@@ -42,6 +43,7 @@ $.getJSON('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/
 	
 	// Other methods include animating the header away.
 	// This can be done by adding a class name containing CSS animation
+	
 	// code to the header like this (uncomment to use)
 	$('.title').addClass('show');
 	$('.main').addClass('grid');
@@ -104,7 +106,7 @@ function displayData(forecast){
 	// If I want to round this number up, I would modify the code like this
 
 	$('.today').html(Math.round(forecast.currently.temperature) + "°F");
-	$('.icon').append('<img src="'+displayIcon(forecast.currently.icon)+'">');
+	$('.icon').html('<img src="'+displayIcon(forecast.currently.icon)+'">');
 
 	$('.highTemp h2').html(Math.round(forecast.daily.data[0].temperatureHigh) + "°F");
 	$('.realFeel h2').html(Math.round(forecast.currently.apparentTemperature) + "°F");
