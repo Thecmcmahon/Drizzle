@@ -344,7 +344,7 @@
 		}
 	}
 
-	.weekday1{
+	.weekday1, .weekday2, .weekday3, .weekday4, .weekday5, .weekday6, .weekday7{
 		display: none;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(12, 150px);

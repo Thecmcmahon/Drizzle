@@ -132,37 +132,37 @@
         <div>Image</div>
 
       </div>
-      <div class="day2">
+      <div onclick="day02()" class="day2">
         <h2>Monday</h2>
         <h3>Temp</h3>
         <h4>HighTemp</h4>
         <div>Image</div>
       </div>
-      <div class="day3">
+      <div onclick="day03()" class="day3">
         <h2>Monday</h2>
         <h3>Temp</h3>
         <h4>HighTemp</h4>
         <div>Image</div>
       </div>
-      <div class="day4">
+      <div onclick="day04()" class="day4">
         <h2>Monday</h2>
         <h3>Temp</h3>
         <h4>HighTemp</h4>
         <div>Image</div>
       </div>
-      <div class="day5">
+      <div onclick="day05()" class="day5">
         <h2>Monday</h2>
         <h3>Temp</h3>
         <h4>HighTemp</h4>
         <div>Image</div>
       </div>
-      <div class="day6">
+      <div onclick="day06()" class="day6">
         <h2>Monday</h2>
         <h3>Temp</h3>
         <h4>HighTemp</h4>
         <div>Image</div>
       </div>
-      <div class="day7">
+      <div onclick="day07()" class="day7">
         <h2>Monday</h2>
         <h3>Temp</h3>
         <h4>HighTemp</h4>
@@ -183,9 +183,77 @@
     
   </section>
 
+  <section class="weekday2">
+    <button class="sectionBack" onclick="day02Back()">Back</button>
+    <h1>Monday</h1>
+    <h2>Low Temp</h2>
+    <h3>High Temp</h3>
+    <h4>Summary</h4>
+    <div>Image</div>
+    <h5>Precipitation Probability</h5>
+    <h6>Humitity</h6>
+    
+  </section>
 
+  <section class="weekday3">
+    <button class="sectionBack" onclick="day03Back()">Back</button>
+    <h1>Monday</h1>
+    <h2>Low Temp</h2>
+    <h3>High Temp</h3>
+    <h4>Summary</h4>
+    <div>Image</div>
+    <h5>Precipitation Probability</h5>
+    <h6>Humitity</h6>
+    
+  </section>
 
+  <section class="weekday4">
+    <button class="sectionBack" onclick="day04Back()">Back</button>
+    <h1>Monday</h1>
+    <h2>Low Temp</h2>
+    <h3>High Temp</h3>
+    <h4>Summary</h4>
+    <div>Image</div>
+    <h5>Precipitation Probability</h5>
+    <h6>Humitity</h6>
+    
+  </section>
 
+  <section class="weekday5">
+    <button class="sectionBack" onclick="day05Back()">Back</button>
+    <h1>Monday</h1>
+    <h2>Low Temp</h2>
+    <h3>High Temp</h3>
+    <h4>Summary</h4>
+    <div>Image</div>
+    <h5>Precipitation Probability</h5>
+    <h6>Humitity</h6>
+    
+  </section>
+
+  <section class="weekday6">
+    <button class="sectionBack" onclick="day06Back()">Back</button>
+    <h1>Monday</h1>
+    <h2>Low Temp</h2>
+    <h3>High Temp</h3>
+    <h4>Summary</h4>
+    <div>Image</div>
+    <h5>Precipitation Probability</h5>
+    <h6>Humitity</h6>
+    
+  </section>
+
+  <section class="weekday7">
+    <button class="sectionBack" onclick="day07Back()">Back</button>
+    <h1>Monday</h1>
+    <h2>Low Temp</h2>
+    <h3>High Temp</h3>
+    <h4>Summary</h4>
+    <div>Image</div>
+    <h5>Precipitation Probability</h5>
+    <h6>Humitity</h6>
+    
+  </section>
 
   <button class="button" onclick="getLocation()">Get Started</button>
   <div class="wait"><h1></h1></div>
@@ -292,6 +360,102 @@ makeItRain();
       $('.multiday').addClass('show');
       $('.multiday').addClass('grid');
       $('.weekday1').removeClass('grid');
+    }
+  </script>
+
+  <script>
+    function day02(){
+      $('.multiday').removeClass('show');
+      $('.multiday').removeClass('grid');
+      $('.weekday2').addClass('grid');
+
+    }
+  </script>
+  <script>
+    function day02Back(){
+      $('.multiday').addClass('show');
+      $('.multiday').addClass('grid');
+      $('.weekday2').removeClass('grid');
+    }
+  </script>
+
+  <script>
+    function day03(){
+      $('.multiday').removeClass('show');
+      $('.multiday').removeClass('grid');
+      $('.weekday3').addClass('grid');
+
+    }
+  </script>
+  <script>
+    function day03Back(){
+      $('.multiday').addClass('show');
+      $('.multiday').addClass('grid');
+      $('.weekday3').removeClass('grid');
+    }
+  </script>
+
+  <script>
+    function day04(){
+      $('.multiday').removeClass('show');
+      $('.multiday').removeClass('grid');
+      $('.weekday1').addClass('grid');
+
+    }
+  </script>
+  <script>
+    function day04Back(){
+      $('.multiday').addClass('show');
+      $('.multiday').addClass('grid');
+      $('.weekday4').removeClass('grid');
+    }
+  </script>
+
+  <script>
+    function day05(){
+      $('.multiday').removeClass('show');
+      $('.multiday').removeClass('grid');
+      $('.weekday5').addClass('grid');
+
+    }
+  </script>
+  <script>
+    function day05Back(){
+      $('.multiday').addClass('show');
+      $('.multiday').addClass('grid');
+      $('.weekday5').removeClass('grid');
+    }
+  </script>
+
+  <script>
+    function day06(){
+      $('.multiday').removeClass('show');
+      $('.multiday').removeClass('grid');
+      $('.weekday6').addClass('grid');
+
+    }
+  </script>
+  <script>
+    function day06Back(){
+      $('.multiday').addClass('show');
+      $('.multiday').addClass('grid');
+      $('.weekday6').removeClass('grid');
+    }
+  </script>
+
+  <script>
+    function day07(){
+      $('.multiday').removeClass('show');
+      $('.multiday').removeClass('grid');
+      $('.weekday7').addClass('grid');
+
+    }
+  </script>
+  <script>
+    function day07Back(){
+      $('.multiday').addClass('show');
+      $('.multiday').addClass('grid');
+      $('.weekday7').removeClass('grid');
     }
   </script>
 
