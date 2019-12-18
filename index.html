@@ -175,11 +175,15 @@
     <button class="sectionBack" onclick="day01Back()">Back</button>
     <h1>Monday</h1>
     <h2>Low Temp</h2>
+    <h2 class="low1">Low Temp</h2>
     <h3>High Temp</h3>
-    <h4>Summary</h4>
+    <h3 class="high1">High Temp</h3>
+    <h4 class="sum1">Summary</h4>
     <div>Image</div>
     <h5>Precipitation Probability</h5>
+    <h5 class="perc1">Precipitation Probability</h5>
     <h6>Humitity</h6>
+    <h6 class="hum1">Humitity</h6>
     
   </section>
 
@@ -187,11 +191,15 @@
     <button class="sectionBack" onclick="day02Back()">Back</button>
     <h1>Monday</h1>
     <h2>Low Temp</h2>
+    <h2 class="low2">Low Temp</h2>
     <h3>High Temp</h3>
-    <h4>Summary</h4>
+    <h3 class="high2">High Temp</h3> 
+    <h4 class="sum2">Summary</h4>
     <div>Image</div>
     <h5>Precipitation Probability</h5>
+    <h5 class="perc2">Precipitation Probability</h5>
     <h6>Humitity</h6>
+    <h6 class="hum2">Humitity</h6>
     
   </section>
 
@@ -199,11 +207,15 @@
     <button class="sectionBack" onclick="day03Back()">Back</button>
     <h1>Monday</h1>
     <h2>Low Temp</h2>
+    <h2 class="low3">Low Temp</h2>
     <h3>High Temp</h3>
-    <h4>Summary</h4>
+    <h3 class="high3">High Temp</h3>
+    <h4 class="sum3">Summary</h4>
     <div>Image</div>
     <h5>Precipitation Probability</h5>
+    <h5 class="perc3">Precipitation Probability</h5>
     <h6>Humitity</h6>
+    <h6 class="hum3">Humitity</h6>
     
   </section>
 
@@ -211,11 +223,15 @@
     <button class="sectionBack" onclick="day04Back()">Back</button>
     <h1>Monday</h1>
     <h2>Low Temp</h2>
+    <h2 class="low4">Low Temp</h2>
     <h3>High Temp</h3>
-    <h4>Summary</h4>
+    <h3 class="high4">High Temp</h3>
+    <h4 class="sum4">Summary</h4>
     <div>Image</div>
     <h5>Precipitation Probability</h5>
+    <h5 class="perc4">Precipitation Probability</h5>
     <h6>Humitity</h6>
+    <h6 class="hum4">Humitity</h6>
     
   </section>
 
@@ -223,11 +239,15 @@
     <button class="sectionBack" onclick="day05Back()">Back</button>
     <h1>Monday</h1>
     <h2>Low Temp</h2>
+    <h2 class="low5">Low Temp</h2>
     <h3>High Temp</h3>
-    <h4>Summary</h4>
+    <h3 class="high5">High Temp</h3>
+    <h4 class="sum5">Summary</h4>
     <div>Image</div>
     <h5>Precipitation Probability</h5>
+    <h5 class="perc5">Precipitation Probability</h5>
     <h6>Humitity</h6>
+    <h6 class="hum5">Humitity</h6>
     
   </section>
 
@@ -235,11 +255,15 @@
     <button class="sectionBack" onclick="day06Back()">Back</button>
     <h1>Monday</h1>
     <h2>Low Temp</h2>
+    <h2 class="low6">Low Temp</h2>
     <h3>High Temp</h3>
-    <h4>Summary</h4>
+    <h3 class="high6">High Temp</h3>
+    <h4 class="sum6">Summary</h4>
     <div>Image</div>
     <h5>Precipitation Probability</h5>
+    <h5 class="perc6">Precipitation Probability</h5>
     <h6>Humitity</h6>
+    <h6 class="hum6">Humitity</h6>
     
   </section>
 
@@ -247,11 +271,15 @@
     <button class="sectionBack" onclick="day07Back()">Back</button>
     <h1>Monday</h1>
     <h2>Low Temp</h2>
+    <h2 class="low7">Low Temp</h2>
     <h3>High Temp</h3>
-    <h4>Summary</h4>
+    <h3 class="high7">High Temp</h3>
+    <h4 class="sum7">Summary</h4>
     <div>Image</div>
     <h5>Precipitation Probability</h5>
+    <h5 class="perc7">Precipitation Probability</h5>
     <h6>Humitity</h6>
+    <h6 class="hum7">Humitity</h6>
     
   </section>
 
@@ -352,6 +380,7 @@ makeItRain();
       $('.multiday').removeClass('show');
       $('.multiday').removeClass('grid');
       $('.weekday1').addClass('grid');
+      $('.weekday1').prop('top',$('#html').offset().top*-1);
 
     }
   </script>

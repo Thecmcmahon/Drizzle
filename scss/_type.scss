@@ -245,12 +245,28 @@
 .weekday1, .weekday2, .weekday3, .weekday4, .weekday5, .weekday6, .weekday7{
 	font-family: $font-1;
 	text-align: center;
-	h1{}
-	h2{}
-	h3{}
-	h4{}
-	h5{}
-	h6{}
+	h1{
+		font-size: 2rem;
+	}
+	h2{
+		font-size: 1.5rem;
+		margin: 24px;
+	}
+	h3{
+		font-size: 1.5rem;
+		margin: 24px;
+	}
+	h4{
+		font-size: 5.5vw;
+	}
+	h5{
+		font-size: 1.5rem;
+		margin: 24px;
+	}
+	h6{
+		font-size: 1.5rem;
+		margin: 24px;
+	}
 	button{
 		background-color: #000; /* Green */
   		border: none;

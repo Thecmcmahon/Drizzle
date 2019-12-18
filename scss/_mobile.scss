@@ -348,36 +348,54 @@
 	.weekday1, .weekday2, .weekday3, .weekday4, .weekday5, .weekday6, .weekday7{
 		display: none;
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(12, 150px);
+		grid-template-rows: repeat(12, 60px);
 		height: 100vh;
 		width: 100vw;
 		h1{
 			grid-column: 1/-1;
 			grid-row: 1;
 		}
+
 		h2{
-			grid-column: 1/-1;
+			grid-column: 1/3;
 			grid-row: 2;
 		}
-		h3{
-			grid-column: 1/-1;
+		.low1, .low2, .low3, .low4, .low5, .low6, .low7{
+			grid-column: 1/3;
 			grid-row: 3;
 		}
-		h4{
-			grid-column: 1/-1;
-			grid-row: 4;
+		h3{
+			grid-column: 3/-1;
+			grid-row: 2;
 		}
-		div{
-			grid-column: 1/-1;
-			grid-row: 5;
+		.high1, .high2, .high3, .high4, .high5, .high6, .high7{
+			grid-column: 3/-1;
+			grid-row: 3;
 		}
-		h5{
+		.sum1, .sum2, .sum3, .sum4, .sum5, .sum6, .sum7{
 			grid-column: 1/-1;
 			grid-row: 6;
 		}
+		div{
+			grid-column: 1/-1;
+			grid-row: 4/6;
+		}
+		h5{
+			grid-column: 1/-1;
+			grid-row: 8;
+		}
+		.perc1, .perc2, .perc3, .perc4, .perc5, .perc6, .perc7{
+			grid-column: 1/-1;
+			grid-row: 9;
+		}
+
 		h6{
 			grid-column: 1/-1;
-			grid-row: 7;
+			grid-row: 10;
+		}
+		.hum1, .hum2, .hum3, .hum4, .hum5, .hum6, .hum7{
+			grid-column: 1/-1;
+			grid-row: 11;
 		}
 		.sectionBack{
 			grid-column: 1/2;
