@@ -119,6 +119,7 @@
 			align-self: start;
 			justify-self: center;
 		}
+		
 		.day1{
 			column-gap: 5px;
 			grid-column: 1/-1;
@@ -406,6 +407,48 @@
 	}
 
 
+	.hourly{
+		img{
+			margin-top: -5vh;
+		}
+	}
 
+	.icon{
+		img{
+			width: 85%;
+		}
+	}
+
+	.multiday2{
+		display: none;
+	}
+.sevenday{
+	display: block;
+}
+
+.sectionBack1{
+	display: none !important;
+}
 
 }
+
+
+@media screen and (min-width: 64em) {
+	.sectionBack{
+		display: none;
+	}
+
+	.sectionBack1{
+		grid-column: 1/2;
+		grid-row: 1;
+		align-self: start;
+		justify-self: center;
+	}
+	.main{
+		.hourly{
+			justify-self: center;
+    		align-self: center;
+		}
+	}
+}
+
