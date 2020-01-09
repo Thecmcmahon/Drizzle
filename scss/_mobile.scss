@@ -17,6 +17,10 @@
 
 
 @media screen and (max-width: 39.9375em) {
+	.multiday2{
+		display: none !important;
+	}
+	
 	body{
 		overflow-x: hidden;
 	}
@@ -32,8 +36,8 @@
 			grid-row: 1;
 		}
 		.sectionBack{
-			grid-column: 1/2;
-			grid-row: 1;
+			grid-column: 1/3 !important;
+			grid-row: 1 !important;
 			align-self: start;
 			justify-self: center;
 		}
@@ -55,7 +59,7 @@
 		.sevenday{
 			grid-column: 2/4;
 			grid-row: 8;
-			align-self: start
+			align-self: start;
 		}
 		.hourly{
 			grid-column: 1/-1;
@@ -423,7 +427,7 @@
 		display: none;
 	}
 .sevenday{
-	display: block;
+	display: block !important;
 }
 
 .sectionBack1{
@@ -434,6 +438,11 @@
 
 
 @media screen and (min-width: 64.0625em) {
+	.hourly{
+		width: 100vw;
+	}
+	
+	
 	.today{
 		font-size: 8rem;
 	}
