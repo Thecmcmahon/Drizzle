@@ -433,8 +433,10 @@
 }
 
 
-@media screen and (min-width: 64em) {
-
+@media screen and (min-width: 64.0625em) {
+	.today{
+		font-size: 8rem;
+	}
 
 
 	.weekday1, .weekday2, .weekday3, .weekday4, .weekday5, .weekday6, .weekday7{
@@ -517,7 +519,14 @@
 	}
 }
 
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+@media screen and (min-width: 40em) and (max-width: 64) {
+	.section2{
+		.today{
+			font-size: 5rem !important;
+		}
+
+	}
+	
 	.main{
 		.hourly{
 			grid-row: 7/10;
