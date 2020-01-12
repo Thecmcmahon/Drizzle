@@ -412,3 +412,22 @@
 
 
 }
+
+
+
+
+.infolink{
+	font-size: 2rem;
+    font-variation-settings: 'wght' 1000;
+    font-family: $font-1;
+    color: #000;
+	text-align: center;
+	
+	grid-row: 1;
+	grid-column: 12;
+	// border: #000 2px solid;
+	// border-radius: 100%;
+	a{
+		text-decoration: none;
+	}
+}
