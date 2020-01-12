@@ -52,18 +52,18 @@
 		
 		.sum{
 			grid-column: 1/-1;
-			grid-row: 3;
+			grid-row: 6 !important;
 			align-self: center;
 			justify-self: center;
 		}
 		.sevenday{
 			grid-column: 2/4;
-			grid-row: 8;
+			grid-row: 10 !important;
 			align-self: start;
 		}
 		.hourly{
 			grid-column: 1/-1;
-			grid-row: 6/8;
+			grid-row: 7/10 !important;
 		}
 		.realFeel{
 			grid-column: 1/-1;
@@ -426,13 +426,13 @@
 	.multiday2{
 		display: none;
 	}
-.sevenday{
-	display: block !important;
-}
+	.sevenday{
+		display: block !important;
+	}
 
-.sectionBack1{
-	display: none !important;
-}
+	.sectionBack1{
+		display: none !important;
+	}
 
 }
 
@@ -523,56 +523,333 @@
 	.main{
 		.hourly{
 			justify-self: center;
-    		align-self: center;
+			align-self: center;
+			
 		}
 	}
-}
 
-@media screen and (min-width: 40em) and (max-width: 64) {
-	.section2{
-		.today{
-			font-size: 5rem !important;
-		}
-
-	}
-	
-	.main{
-		.hourly{
-			grid-row: 7/10;
-		}
-
-	}
 	.multiday2{
-		grid-template-columns: repeat(7, 1fr);
+		grid-template-columns: repeat(9, 1fr);
 		grid-template-rows: repeat(2, 150px);
 		display: grid;
 		width: 100vw;
-		
-		.day1{
+		grid-column: 1/-1;
+		grid-row: 12/14;
+		.sectionBack{
 			grid-column: 1;
+			grid-row: 1;
+		}
+		h1{
+			grid-column: 1/-1;
+			grid-row: 1;
+			justify-self: center;
+			align-self: center;
+		}
+	
+		.day1{
+			column-gap: 5px;
+			grid-column: 2;
+			grid-row: 2;
+			// align-self: center;
+			justify-self: center;
+			display: grid;
+			grid-template-columns: repeat(4, 2vw);
+			grid-template-rows: repeat(4, 25px);
+			h2{
+				grid-column: 1/-1;
+				grid-row: 1;
+	
+			}
+			h3{
+				grid-column: 1/3;
+				grid-row: 2/4;
+				justify-self: end;
+				align-self: center;
+			}
+			h4{
+				grid-column: 3/-1;
+				grid-row: 2/4;
+				justify-self: start;
+				align-self: center;
+			}
+			div{
+				grid-column: 1/-1;
+				grid-row: 4;
+				justify-self: center;
+				img{
+					margin-top: -2vh;
+				}
+			}
 		}
 		.day2{
-			grid-column: 2;
+			column-gap: 5px;
+			grid-column: 3;
+			grid-row: 2;
+			// align-self: center;
+			justify-self: center;
+			display: grid;
+			grid-template-columns: repeat(4, 2vw);
+			grid-template-rows: repeat(4, 25px);
+			h2{
+				grid-column: 1/-1;
+				grid-row: 1;
+	
+			}
+			h3{
+				grid-column: 1/3;
+				grid-row: 2/4;
+				justify-self: end;
+				align-self: center;
+			}
+			h4{
+				grid-column: 3/-1;
+				grid-row: 2/4;
+				justify-self: start;
+				align-self: center;
+			}
+			div{
+				grid-column: 1/-1;
+				grid-row: 4;
+				justify-self: center;
+				img{
+					margin-top: -2vh;
+				}
+			}
 		}
 		.day3{
-			grid-column: 3;
-		}
-		.day4{
+			column-gap: 5px;
 			grid-column: 4;
+			grid-row: 2;
+			// align-self: center;
+			justify-self: center;
+			display: grid;
+			grid-template-columns: repeat(4, 2vw);
+			grid-template-rows: repeat(4, 25px);
+			h2{
+				grid-column: 1/-1;
+				grid-row: 1;
+	
+			}
+			h3{
+				grid-column: 1/3;
+				grid-row: 2/4;
+				justify-self: end;
+				align-self: center;
+			}
+			h4{
+				grid-column: 3/-1;
+				grid-row: 2/4;
+				justify-self: start;
+				align-self: center;
+			}
+			div{
+				grid-column: 1/-1;
+				grid-row: 4;
+				justify-self: center;
+				img{
+					margin-top: -2vh;
+				}
+			}
+		}
+	
+		.day4{
+			column-gap: 5px;
+			grid-column: 5;
+			grid-row: 2;
+			// align-self: center;
+			justify-self: center;
+			display: grid;
+			grid-template-columns: repeat(4, 2vw);
+			grid-template-rows: repeat(4, 25px);
+			h2{
+				grid-column: 1/-1;
+				grid-row: 1;
+	
+			}
+			h3{
+				grid-column: 1/3;
+				grid-row: 2/4;
+				justify-self: end;
+				align-self: center;
+			}
+			h4{
+				grid-column: 3/-1;
+				grid-row: 2/4;
+				justify-self: start;
+				align-self: center;
+			}
+			div{
+				grid-column: 1/-1;
+				grid-row: 4;
+				justify-self: center;
+				img{
+					margin-top: -2vh;
+				}
+			}
 		}
 		.day5{
-			grid-column: 5;
+			column-gap: 5px;
+			grid-column: 6;
+			grid-row: 2;
+			// align-self: center;
+			justify-self: center;
+			display: grid;
+			grid-template-columns: repeat(4, 2vw);
+			grid-template-rows: repeat(4, 25px);
+			h2{
+				grid-column: 1/-1;
+				grid-row: 1;
+	
+			}
+			h3{
+				grid-column: 1/3;
+				grid-row: 2/4;
+				justify-self: end;
+				align-self: center;
+			}
+			h4{
+				grid-column: 3/-1;
+				grid-row: 2/4;
+				justify-self: start;
+				align-self: center;
+			}
+			div{
+				grid-column: 1/-1;
+				grid-row: 4;
+				justify-self: center;
+				img{
+					margin-top: -2vh;
+				}
+			}
 		}
 		.day6{
-			grid-column: 6;
+			column-gap: 5px;
+			grid-column: 7;
+			grid-row: 2;
+			// align-self: center;
+			justify-self: center;
+			display: grid;
+			grid-template-columns: repeat(4, 2vw);
+			grid-template-rows: repeat(4, 25px);
+			h2{
+				grid-column: 1/-1;
+				grid-row: 1;
+	
+			}
+			h3{
+				grid-column: 1/3;
+				grid-row: 2/4;
+				justify-self: end;
+				align-self: center;
+			}
+			h4{
+				grid-column: 3/-1;
+				grid-row: 2/4;
+				justify-self: start;
+				align-self: center;
+			}
+			div{
+				grid-column: 1/-1;
+				grid-row: 4;
+				justify-self: center;
+				img{
+					margin-top: -2vh;
+				}
+			}
 		}
 		.day7{
-			grid-column: 7;
+			column-gap: 5px;
+			grid-column: 8;
+			grid-row: 2;
+			// align-self: center;
+			justify-self: center;
+			display: grid;
+			grid-template-columns: repeat(4, 2vw);
+			grid-template-rows: repeat(4, 25px);
+			h2{
+				grid-column: 1/-1;
+				grid-row: 1;
+	
+			}
+			h3{
+				grid-column: 1/3;
+				grid-row: 2/4;
+				justify-self: end;
+				align-self: center;
+			}
+			h4{
+				grid-column: 3/-1;
+				grid-row: 2/4;
+				justify-self: start;
+				align-self: center;
+			}
+			div{
+				grid-column: 1/-1;
+				grid-row: 4;
+				justify-self: center;
+				img{
+					margin-top: -2vh;
+				}
+			}
 		}
 	
 	
 	}
 
 
+}
+
+// @media screen and (min-width: 40em) and (max-width: 64em) {
+// 	.section2{
+// 		.today{
+// 			font-size: 5rem !important;
+// 		}
+
+// 	}
+	
+// 	.main{
+// 		.hourly{
+// 			grid-row: 7/10;
+// 		}
+
+// 	}
+// 	.multiday2{
+// 		grid-template-columns: repeat(7, 1fr);
+// 		grid-template-rows: repeat(2, 150px);
+// 		display: grid;
+// 		width: 100vw;
+		
+// 		.day1{
+// 			grid-column: 1;
+// 		}
+// 		.day2{
+// 			grid-column: 2;
+// 		}
+// 		.day3{
+// 			grid-column: 3;
+// 		}
+// 		.day4{
+// 			grid-column: 4;
+// 		}
+// 		.day5{
+// 			grid-column: 5;
+// 		}
+// 		.day6{
+// 			grid-column: 6;
+// 		}
+// 		.day7{
+// 			grid-column: 7;
+// 		}
+	
+	
+// 	}
+
+
+
+// }
+@media screen and (min-width: 1244px){
+	.hourly{
+		width: unset;
+	}
 
 }
