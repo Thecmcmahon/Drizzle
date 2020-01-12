@@ -363,6 +363,8 @@
 
 	}
 	
+	
+	
 	.main{
 		.hourly{
 			grid-row: 7/10;
@@ -402,7 +404,11 @@
 		}
 	
 	}
-
+	.weekday1,.weekday2,.weekday3,.weekday4,.weekday5,.weekday6,.weekday7{
+		.sectionBack{
+			display: none;
+		}
+	}
 
 
 }

@@ -253,6 +253,11 @@
 	img{
 		margin-top: -4vh;
 	}
+	.sectionBack{
+		img{
+			margin-top: 0;
+		}
+	}
 }
 
 .show{
@@ -263,7 +268,7 @@
 }
 
 .sectionBack{
-	background-color: black;
+	cursor: pointer;
 	padding: inherit;
 	text-align: center;
 	button{
@@ -317,4 +322,8 @@
 		font-variation-settings: 'wght' 1000;
 		text-decoration: none;
 	}
+}
+
+.sectionBack, .sectionBack1{
+	width: 50px;
 }
